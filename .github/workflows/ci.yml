@@ -5,7 +5,7 @@ on:
     types: [created]
 
 jobs:
-  publish-npm:
+  publish-vscode-extension:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,7 +18,7 @@ jobs:
         
       - name: Package and Publish
         run: |
-          - npx vsce package
-          - npx vsce publish
+          npx vsce package
+          npx vsce publish
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
