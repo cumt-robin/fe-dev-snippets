@@ -9,13 +9,15 @@
       "",
       "<script lang=\"ts\" setup>",
       "import { ref } from 'vue'",
+      "",
+      "const a = ref(1);",
       "</script>",
       "",
       "<style lang=\"less\" scoped>",
       "",
       "</style>"
     ],
-    "description": "vue3 setup template for quickly setting up the .vue file structure"
+    "description": "vue3 setup script template for quickly setting up the .vue file structure"
   },
   "Vue3 Normal Template": {
     "scope": "vue",
@@ -31,7 +33,7 @@
       "export default defineComponent({",
       "  name: '${1:YourComponent}',",
       "  setup() {",
-      "    const a = ref(1)",
+      "    const a = ref(1);",
       "    return {",
       "      a",
       "    }",
@@ -43,6 +45,6 @@
       "",
       "</style>"
     ],
-    "description": "vue3 setup template for quickly setting up the .vue file structure"
+    "description": "vue3 normal template for quickly setting up the .vue file structure"
   }
 }
