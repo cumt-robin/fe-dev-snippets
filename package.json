@@ -2,7 +2,7 @@
   "name": "fe-dev-snippets",
   "displayName": "Frontend Dev Snippets",
   "description": "some practical snippets",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "tusi",
   "engines": {
     "vscode": "^1.28.0"
