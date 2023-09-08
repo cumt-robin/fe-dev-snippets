@@ -21,7 +21,7 @@
     ]
   },
   "scripts": {
-    "create-release": "release-it"
+    "create-release": "release-it --ci"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^7.0.1",
