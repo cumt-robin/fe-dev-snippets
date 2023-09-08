@@ -19,5 +19,12 @@
         "path": "./snippets/vue.json"
       }
     ]
+  },
+  "scripts": {
+    "create-release": "release-it"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^7.0.1",
+    "release-it": "^16.1.5"
   }
 }

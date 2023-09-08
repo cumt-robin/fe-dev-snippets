@@ -1,0 +1,53 @@
+# This is a basic workflow that is manually triggered
+
+name: Manual Trigger Release Workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Remarks'
+        # Default value if no value is explicitly provided
+        default: 'trigger a release'
+        # Input has to be provided for the workflow to run
+        required: true
+        
+env:
+  GH_TOKEN: ${{secrets.TOKEN}}
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  trigger-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v3
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      
+      - name: Install Dependency
+        run: yarn
+        
+      - name: Create Release
+        run: |
+          yarn create-release
+
