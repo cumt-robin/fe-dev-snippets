@@ -1,0 +1,20 @@
+{
+  "Vue3 Setup Template": {
+    "scope": "vue",
+    "prefix": "vue3setup",
+    "body": [
+      "<template>",
+      "   <div>Vue3 Setup</div>",
+      "</template>",
+      "",
+      "<script lang=\"ts\" setup>",
+      "import { ref } from 'vue'",
+      "</script>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "vue3 setup template for quickly setting up the .vue file structure"
+  }
+}

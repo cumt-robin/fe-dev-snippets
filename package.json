@@ -1,0 +1,23 @@
+{
+  "name": "fe-dev-snippets",
+  "displayName": "Frontend Dev Snippets",
+  "description": "some practical snippets",
+  "version": "0.0.1",
+  "publisher": "tusi",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "images/icon.png",
+  "repository": "https://github.com/cumt-robin/fe-dev-snippets.git",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue.json"
+      }
+    ]
+  }
+}
