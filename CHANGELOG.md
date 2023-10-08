@@ -1,5 +1,12 @@
 
 
+# [0.2.0](https://github.com/cumt-robin/fe-dev-snippets/compare/0.1.5...0.2.0) (2023-10-08)
+
+
+### Features
+
+* 增加 vue3tsx ([1d93084](https://github.com/cumt-robin/fe-dev-snippets/commit/1d93084c6cd51248f11d3cc51cce8b984e9590b1))
+
 ## 0.1.5 (2023-09-08)
 
 ## 0.1.4 (2023-09-08)
