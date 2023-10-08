@@ -10,3 +10,4 @@
 | ----------    | ----------               |
 | vue3setup     | vue3 setup script 模板    | 
 | vue3tpl     | vue3 defineComponent 模板    | 
+| vue3tsx     | vue3 tsx 模板    | 

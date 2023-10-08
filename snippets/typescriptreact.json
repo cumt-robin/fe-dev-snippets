@@ -1,0 +1,22 @@
+{
+  "Vue3 TSX Template": {
+    "scope": "typescriptreact",
+    "prefix": "vue3tsx",
+    "body": [
+      "import { ref, defineComponent } from 'vue'",
+      "",
+      "export default defineComponent({",
+      "  name: '${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}',",
+      "  props: {$2},",
+      "  setup(props, { emit, attrs, slots, expose }) {",
+      "    const value = ref(1)",
+      "",
+      "    return () => {",
+      "      return <div>${3:demo}</div>",
+      "    }",
+      "  },",
+      "})"
+    ],
+    "description": "vue3 tsx template for quickly setting up the .tsx file structure"
+  }
+}

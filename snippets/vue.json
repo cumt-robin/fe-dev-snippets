@@ -4,7 +4,7 @@
     "prefix": "vue3setup",
     "body": [
       "<template>",
-      "  <div>Vue3 Setup</div>",
+      "  <div>${1:Vue3 Setup}</div>",
       "</template>",
       "",
       "<script lang=\"ts\" setup>",
@@ -31,7 +31,7 @@
       "import { defineComponent, ref } from 'vue'",
       "",
       "export default defineComponent({",
-      "  name: '${1:YourComponent}',",
+      "  name: '${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}',",
       "  setup() {",
       "    const a = ref(1);",
       "    return {",
