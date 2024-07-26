@@ -1,5 +1,12 @@
 
 
+# 0.3.0 (2024-07-26)
+
+
+### Features
+
+* 增加react fc模板 ([0cef5d6](https://github.com/cumt-robin/fe-dev-snippets/commit/0cef5d6eb8674b1a63c6b024b827778abe8a607c))
+
 ## [0.2.1](https://github.com/cumt-robin/fe-dev-snippets/compare/0.2.0...0.2.1) (2023-10-08)
 
 # [0.2.0](https://github.com/cumt-robin/fe-dev-snippets/compare/0.1.5...0.2.0) (2023-10-08)
