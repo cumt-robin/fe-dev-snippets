@@ -18,5 +18,42 @@
       "})"
     ],
     "description": "vue3 tsx template for quickly setting up the .tsx file structure"
+  },
+  "Typed React FC Template": {
+    "scope": "typescriptreact",
+    "prefix": "trfc",
+    "body": [
+      "interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props {",
+      "  open: boolean;",
+      "}",
+      "",
+      "const ${1}: React.FC<${1}Props> = ({ open }) => {",
+      "  return <div className=\"wrapper\">{open ? <div>${1}</div> : null}</div>;",
+      "};",
+      "",
+      "export default ${1};"
+    ],
+    "description": "React functional component template with type support"
+  },
+  "Typed React FC With Children Template": {
+    "scope": "typescriptreact",
+    "prefix": "trfcwc",
+    "body": [
+      "import { PropsWithChildren } from \"react\";",
+      "",
+      "interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props {",
+      "  open: boolean;",
+      "}",
+      "",
+      "const ${1}: React.FC<PropsWithChildren<${1}Props>> = ({ open, children }) => {",
+      "  return <div className=\"wrapper\">",
+      "    {open ? <div>${1}</div> : null}",
+      "    {children}",
+      "  </div>;",
+      "};",
+      "",
+      "export default ${1};"
+    ],
+    "description": "React functional component templates with type support and support for the children prop"
   }
 }
