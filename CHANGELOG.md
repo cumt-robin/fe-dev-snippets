@@ -1,5 +1,7 @@
 
 
+## [0.3.1](https://github.com/cumt-robin/fe-dev-snippets/compare/0.3.0...0.3.1) (2024-07-27)
+
 # 0.3.0 (2024-07-26)
 
 
